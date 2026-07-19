@@ -52,7 +52,7 @@
 }
 
 .footer-subscribe {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .footer-subscribe-title {
@@ -74,13 +74,18 @@
   height: 40px;
   padding-left: 16px;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input:focus {
+  border-color: #31d0aa;
 }
 
 .subscribe-input::placeholder {
@@ -108,7 +113,7 @@
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .subscribe-icon {
